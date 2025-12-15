@@ -3,26 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <title>Walk McHenry</title>
+
 <style>
 body {
     margin: 0;
-    font-family: Trebuchet MS, Arial, sans-serif;
+    font-family: "Trebuchet MS", Arial, sans-serif;
     background: linear-gradient(to bottom, #e8f1ff, #ffffff);
     color: #333;
 }
-/* HEADER */
+
 header {
     background: linear-gradient(90deg, #4facfe, #00f2fe);
     color: white;
     text-align: center;
     padding: 60px 20px;
-    animation: fadeDown 1.5s;
 }
-header h1 {
-    font-size: 3em;
-    margin: 0;
-}
-/* NAV */
+
 nav {
     background-color: #2c7be5;
     text-align: center;
@@ -30,22 +26,20 @@ nav {
     position: sticky;
     top: 0;
 }
+
 nav a {
     color: white;
     margin: 15px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1em;
 }
-nav a:hover {
-    text-decoration: underline;
-}
-/* SECTIONS */
+
 section {
     max-width: 1000px;
     margin: auto;
     padding: 40px 20px;
 }
+
 .card {
     background: white;
     border-radius: 15px;
@@ -54,116 +48,144 @@ section {
     box-shadow: 0 8px 20px rgba(0,0,0,0.12);
     animation: fadeUp 1.2s;
 }
-.card:hover {
-    transform: scale(1.02);
-    transition: 0.3s;
-}
-.card h2 {
-    color: #2c7be5;
-}
-.icon {
-    font-size: 2.2em;
-}
-/* IMAGES */
-img {
+
+h2 { color: #2c7be5; }
+
+img, iframe {
     width: 100%;
     border-radius: 12px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
-/* LIST */
-ul li {
-    font-size: 1.1em;
-    margin: 10px 0;
+
+.before-after {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
-/* FOOTER */
+
 footer {
     background-color: #2c7be5;
     color: white;
     text-align: center;
     padding: 20px;
 }
-/* ANIMATIONS */
+
 @keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-@keyframes fadeDown {
-    from {
-        opacity: 0;
-        transform: translateY(-40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 </style>
 </head>
+
 <body>
 
 <header>
-    <h1>🚶 Walk McHenry</h1>
-    <p>Adding More Sidewalks for a Safer, Healthier Community</p>
+<h1>🚶 Walk McHenry</h1>
+<p>Safer Sidewalks. Safer Students. Stronger Community.</p>
 </header>
 
 <nav>
-    <a href="#problem">🚨 Problem</a>
-    <a href="#solution">🛠️ Solution</a>
-    <a href="#projects">🏗️ Projects</a>
-    <a href="#involved">🤝 Get Involved</a>
+<a href="#problem">Problem</a>
+<a href="#beforeafter">Before & After</a>
+<a href="#map">Map</a>
+<a href="#cost">Cost</a>
+<a href="#action">Action</a>
 </nav>
 
 <section id="problem">
-    <div class="card">
-        <h2>🚨 The Problem: Gaps in Connectivity</h2>
-        <p>McHenry County has identified a lack of bicycle and pedestrian infrastructure in key corridors, which presents a safety concern and a barrier to a healthier lifestyle. Without continuous paths, residents find it difficult to walk or bike safely to local destinations.</p>
-        <div class="icon">⚠️</div>
-    </div>
+<div class="card">
+<h2>🚨 The Problem</h2>
+<p>
+Many areas in McHenry do not have sidewalks, especially near schools and busy roads.
+This forces students and families to walk close to traffic.
+</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/49/McHenry_Illinois_residential_street.jpg">
+</div>
 </section>
 
-<section id="solution">
-    <div class="card">
-        <h2>🛠️ Our Solution: Coordinated Infrastructure Plans</h2>
-        <p>The City of McHenry and McHenry County are working together on multiple projects to improve pedestrian access, guided by the McHenry County Connection Pedestrian, Bicycle and Trails Master Plan. This plan provides a framework to develop connectivity over the next several decades.</p>
-        <div class="icon">✅</div>
-    </div>
+<section id="beforeafter">
+<div class="card">
+<h2>🔁 Before & After Sidewalks</h2>
+
+<div class="before-after">
+<div>
+<p><strong>❌ Before</strong></p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/49/McHenry_Illinois_residential_street.jpg">
+</div>
+
+<div>
+<p><strong>✅ After</strong></p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Sidewalk_in_residential_area.jpg">
+</div>
+</div>
+</div>
 </section>
 
-<section id="projects">
-    <div class="card">
-        <h2>🏗️ Current & Upcoming Sidewalk Projects</h2>
-        <p>Several major projects are in various stages of development or construction in late 2025:</p>
-        <ul>
-            <li>**IL Route 31 (from IL 176 to IL 120):** A project involving roadway widening and reconstruction will include new bicycle and pedestrian accommodations along the corridor. Phase II design is expected to begin soon, with construction anticipated after 2026.</li>
-            <li>**Bull Valley Road:** Construction is planned for a 10-foot-wide multi-use path along the north side of Bull Valley Road, connecting the Prairie Trail to IL Route 31.</li>
-            <li>**Randall Road Corridor:** The ongoing Phase III, Stage 2 construction, which began in March 2025, includes the installation of a new multi-use path along the east side and a new sidewalk along the west side of Randall Road.</li><li>**City Shared Cost Program:** The city operates a popular Shared Cost Sidewalk Program, where property owners can share the cost of repairs with the City. Applications for the 2025 program opened in January.</li>
-        </ul>
-        <img src="images.unsplash.com" alt="Construction workers installing new sidewalk">
-    </div>
+<section id="map">
+<div class="card">
+<h2>📍 Priority Areas Map</h2>
+<p>
+These areas were chosen because they have high foot traffic and limited sidewalks.
+</p>
+
+<ul>
+<li>🏫 McHenry High School – West Campus</li>
+<li>🏫 Landmark Elementary School</li>
+<li>🛣️ Route 31</li>
+<li>🛣️ Riverside Drive</li>
+</ul>
+
+<iframe 
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11724.50010778298!2d-88.277!3d42.333!2m3!1f0!2f0!3f0"
+height="350" loading="lazy"></iframe>
+</div>
 </section>
 
-<section id="involved">
-    <div class="card">
-        <h2>🤝 Get Involved & Stay Informed</h2>
-        <p>You can stay informed about project timelines and progress through official channels:</p>
-        <ul>
-            <li>Visit the [City of McHenry Public Works website](cityofmchenry.orgyour_government/departments/public_works/projects.php) for updates on local projects like road resurfacing and utility work.</li>
-            <li>Check the [McHenry County Division of Transportation (MCDOT) website](https://www.mchenrycountyil.gov/departments/transportation) for information on county highway projects and the full pedestrian/bicycle plan.</li>
-            <li>Review meeting minutes and agendas on the [City of McHenry's official website](cityofmchenry.org) to follow City Council discussions on infrastructure initiatives.</li>
-        </ul>
-        <div class="icon">📣</div>
-    </div>
+<section id="cost">
+<div class="card">
+<h2>💰 How Much Will It Cost?</h2>
+
+<p>
+On average, building sidewalks costs about:
+</p>
+
+<ul>
+<li>🧱 <strong>$30–$40 per square foot</strong></li>
+<li>🚶 About <strong>$200,000 per mile</strong> of sidewalk</li>
+</ul>
+
+<p>
+This project could start small by building sidewalks in the most dangerous areas first.
+</p>
+
+<h3>🏦 How Can It Be Paid For?</h3>
+<ul>
+<li>City infrastructure budget</li>
+<li>State and federal safety grants</li>
+<li>Phased construction over several years</li>
+<li>Community partnerships</li>
+</ul>
+
+<p><strong>Safety is worth the investment.</strong></p>
+</div>
+</section>
+
+<section id="action">
+<div class="card">
+<h2>🗳️ Take Action</h2>
+<p>
+Sidewalks protect lives, improve health, and bring the community together.
+By supporting sidewalk projects, we help McHenry move forward.
+</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/35/McHenry_Riverwalk.jpg">
+</div>
 </section>
 
 <footer>
-    <p>&copy; 2025 Walk McHenry Initiative. In partnership with the City of McHenry and MCDOT.</p>
+<p>Walk McHenry © 2025</p>
 </footer>
 
 </body>
 </html>
+
+
