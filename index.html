@@ -53,19 +53,26 @@ nav a {
     font-weight: bold;
 }
 
-/* SECTIONS */
+/* SECTION COLORS */
+.overview-section { background:#f4f6f8; }
+.problem-section { background:#f0f0f0; }
+.locations-section { background:#eef2f5; }
+.map-section { background:#ffffff; }
+.cost-section { background:#f4f6f8; }
+.impact-section { background:#eef2f5; }
+.conclusion-section { background:#f0f0f0; }
+
+/* GENERAL SECTIONS */
 section {
-    max-width: 1100px;
-    margin: auto;
     padding: 70px 20px;
 }
 
-/* CARDS */
 .card {
-    background-color: #f7f7f7;
+    max-width: 1100px;
+    margin: auto;
+    background-color: #ffffff;
     border-radius: 12px;
-    padding: 40px;
-    margin-bottom: 60px;
+    padding: 45px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
@@ -77,38 +84,30 @@ h2 {
 
 h3 {
     color: #444;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
-/* BACKGROUND IMAGE SECTIONS */
-.bg-section {
-    background-size: cover;
-    background-position: center;
-    padding: 80px 20px;
-}
-
-.bg-overlay {
-    background-color: rgba(245,245,245,0.92);
-    max-width: 1100px;
-    margin: auto;
-    padding: 45px;
-    border-radius: 12px;
-}
-
-/* BEFORE AFTER */
-.before-after {
+/* BEFORE AFTER MAPS */
+.map-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    margin-top: 35px;
 }
 
-/* MAP */
-iframe {
+.map-grid img {
     width: 100%;
-    height: 350px;
-    border-radius: 10px;
-    border: none;
-    margin-top: 25px;
+    border-radius: 12px;
+}
+
+/* LEGEND */
+.legend {
+    margin-top: 40px;
+    border-top: 2px solid #ddd;
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 /* FOOTER */
@@ -135,50 +134,51 @@ to improve pedestrian safety, accessibility, and long-term community outcomes.
 <a href="#overview">Overview</a>
 <a href="#problem">Problem</a>
 <a href="#locations">Locations</a>
-<a href="#beforeafter">Before & After</a>
 <a href="#map">Map</a>
 <a href="#cost">Cost</a>
 <a href="#impact">Impact</a>
 <a href="#conclusion">Conclusion</a>
 </nav>
 
-<section id="overview">
+<!-- OVERVIEW -->
+<section id="overview" class="overview-section">
 <div class="card">
 <h2>Project Overview</h2>
 <p>
-McHenry lacks continuous sidewalk infrastructure in several residential
-and high-traffic areas. This proposal recommends a phased expansion of sidewalks
-to improve public safety, pedestrian mobility, and overall quality of life.
+McHenry currently lacks continuous sidewalk infrastructure in several
+residential and high-traffic areas. This proposal recommends a phased
+expansion of sidewalks to improve safety, accessibility, and mobility.
 </p>
 <p>
-Sidewalks are essential public safety infrastructure and a foundational
-component of responsible city planning.
+Sidewalks are essential public safety infrastructure that support students,
+seniors, families, and individuals with disabilities.
 </p>
 </div>
 </section>
 
-<section id="problem" class="bg-section"
-style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/4/49/McHenry_Illinois_residential_street.jpg');">
-<div class="bg-overlay">
+<!-- PROBLEM -->
+<section id="problem" class="problem-section">
+<div class="card">
 <h2>Problem Statement</h2>
 <p>
-Many streets in McHenry were designed primarily for vehicle traffic.
-Pedestrians are frequently forced to walk on shoulders or in traffic lanes.
+Many streets in McHenry were designed primarily for vehicle traffic,
+leaving pedestrians without dedicated walking space.
 </p>
 <ul>
-<li>Higher risk of pedestrian injury</li>
-<li>Unsafe school walking routes</li>
-<li>Limited accessibility for seniors and individuals with disabilities</li>
-<li>Increased conflict between drivers and pedestrians</li>
+<li>Increased risk of pedestrian injury</li>
+<li>Unsafe walking routes near schools</li>
+<li>Limited ADA accessibility</li>
+<li>Conflict between vehicles and pedestrians</li>
 </ul>
 </div>
 </section>
 
-<section id="locations">
+<!-- LOCATIONS -->
+<section id="locations" class="locations-section">
 <div class="card">
 <h2>Priority Locations</h2>
 
-<h3>Schools & Youth Areas</h3>
+<h3>Schools</h3>
 <ul>
 <li>McHenry High School – West Campus</li>
 <li>Landmark Elementary School</li>
@@ -190,7 +190,7 @@ Pedestrians are frequently forced to walk on shoulders or in traffic lanes.
 <li>Riverside Drive</li>
 </ul>
 
-<h3>Community Connections</h3>
+<h3>Community Areas</h3>
 <ul>
 <li>Bus stops</li>
 <li>Parks and downtown connectors</li>
@@ -198,79 +198,100 @@ Pedestrians are frequently forced to walk on shoulders or in traffic lanes.
 </div>
 </section>
 
-<section id="beforeafter" class="bg-section"
-style="background-image:url('https://upload.wikimedia.
-    org/wikipedia/commons/9/92/Sidewalk_in_residential_area.jpg');">
-<div class="bg-overlay">
-<h2>Before & After Conditions</h2>
-
-<div class="before-after">
-<div>
-<h3>Before</h3>
-<p>
-Pedestrians share space with vehicles, increasing risk and reducing predictability.
-</p>
-</div>
-
-<div>
-<h3>After</h3>
-<p>
-Dedicated sidewalks create separation, safety, and accessible walking routes.
-</p>
-</div>
-</div>
-</div>
-</section>
-
-<section id="map" style="background:#ffffff;">
+<!-- MAP -->
+<section id="map" class="map-section">
 <div class="card">
 
-<h2>Pedestrian Priority Map</h2>
+<h2>Pedestrian Priority Map — Before & After</h2>
 <p>
-The following visuals highlight areas in McHenry where pedestrian activity
-intersects with vehicle traffic and sidewalk infrastructure is limited or missing.
-These locations represent the highest priority for safety improvements.
+This comparison shows current pedestrian conditions and how
+new sidewalks would improve connectivity and safety.
 </p>
 
-<!-- IMAGE GRID -->
-<div style="display:grid; grid-template-columns:1fr 1fr; gap:25px; margin-top:30px;">
+<div class="map-grid">
 
-    <div>
-        <h3>📍 School & Student Routes</h3>
-        <p>
-        Areas near McHenry High School (West Campus) and Landmark Elementary
-        experience daily foot traffic without consistent sidewalks.
-        </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/McHenry_High_School_West_Campus.jpg"
-             alt="McHenry High School area"
-             style="width:100%; border-radius:10px;">
-    </div>
+<div>
+<h3>❌ Existing Conditions (Before)</h3>
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/55/McHenry_Illinois_Map.png" alt="Before map">
+<p>
+Sidewalks are disconnected, forcing pedestrians to share space with vehicles.
+</p>
+</div>
 
-    <div>
-        <h3>📍 Major Roads</h3>
-        <p>
-        Roads such as Route 31 and Riverside Drive carry high vehicle volumes,
-        creating unsafe conditions for pedestrians without separation.
-        </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Fox_River_McHenry.jpg"
-             alt="Route 31 area"
-             style="width:100%; border-radius:10px;">
-    </div>
+<div>
+<h3>✅ Proposed Improvements (After)</h3>
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/55/McHenry_Illinois_Map.png" alt="After map">
+<p>
+Continuous sidewalks connect schools, neighborhoods, and community spaces.
+</p>
+</div>
 
 </div>
 
-<!-- SIMPLE MAP IMAGE -->
-<div style="margin-top:40px;">
-    <h3>📍 Citywide Context</h3>
-    <p>
-    This map provides a citywide view of McHenry, helping visualize how
-    sidewalks would connect schools, neighborhoods, and community spaces.
-    </p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/McHenry_Illinois_Map.png"
-         alt="Map of McHenry Illinois"
-         style="width:100%; border-radius:12px;">
+<div class="legend">
+<div>
+<p><strong>🔴 Red Lines</strong> — High-risk pedestrian areas</p>
+<p><strong>🟡 Yellow Zones</strong> — School walking routes</p>
+</div>
+<div>
+<p><strong>🟢 Green Lines</strong> — Proposed sidewalks</p>
+<p><strong>🔵 Blue Areas</strong> — Parks & downtown areas</p>
+</div>
 </div>
 
 </div>
 </section>
 
+<!-- COST -->
+<section id="cost" class="cost-section">
+<div class="card">
+<h2>Cost Analysis & Funding</h2>
+<ul>
+<li>$30–$40 per square foot</li>
+<li>$200,000–$250,000 per mile</li>
+</ul>
+<p>
+Sidewalks typically last over 30 years and reduce long-term safety
+and healthcare costs.
+</p>
+
+<h3>Funding Strategy</h3>
+<ul>
+<li>City capital improvement funds</li>
+<li>State and federal safety grants</li>
+<li>Phased multi-year construction</li>
+</ul>
+</div>
+</section>
+
+<!-- IMPACT -->
+<section id="impact" class="impact-section">
+<div class="card">
+<h2>Community Impact</h2>
+<ul>
+<li>Improved ADA accessibility</li>
+<li>Safer school routes</li>
+<li>Reduced vehicle dependence</li>
+<li>Stronger neighborhood connections</li>
+</ul>
+</div>
+</section>
+
+<!-- CONCLUSION -->
+<section id="conclusion" class="conclusion-section">
+<div class="card">
+<h2>Conclusion</h2>
+<p>
+Expanding sidewalk infrastructure is a practical, proven investment
+in McHenry’s future. This proposal prioritizes safety, accessibility,
+and responsible long-term planning.
+</p>
+</div>
+</section>
+
+<footer>
+<p>Walk McHenry © 2025 | Sidewalk Infrastructure Proposal</p>
+</footer>
+
+</body>
+</html>
