@@ -2,296 +2,110 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Walk McHenry | Sidewalk Infrastructure Proposal</title>
+<title>Walk McHenry | Sidewalk Infrastructure Improvement Proposal</title>
+
 
 <style>
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #e5e5e5;
-    color: #1f1f1f;
-    line-height: 1.7;
+margin: 0;
+font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+background-color: #eceff1;
+color: #1f1f1f;
+line-height: 1.75;
 }
 
-/* HERO */
+
+/* HEADER */
 header {
-    background:
-        linear-gradient(rgba(40,40,40,0.75), rgba(40,40,40,0.75)),
-        url("https://upload.wikimedia.org/wikipedia/commons/6/63/Downtown_McHenry_Illinois.jpg");
-    background-size: cover;
-    background-position: center;
-    color: #ffffff;
-    padding: 90px 20px;
-    text-align: center;
+background:
+linear-gradient(rgba(30,30,30,0.8), rgba(30,30,30,0.8)),
+url("https://upload.wikimedia.org/wikipedia/commons/6/63/Downtown_McHenry_Illinois.jpg");
+background-size: cover;
+background-position: center;
+color: #ffffff;
+padding: 110px 20px;
+text-align: center;
 }
+
 
 header h1 {
-    font-size: 3.2em;
-    margin: 0;
+font-size: 3.4em;
+margin-bottom: 10px;
 }
+
 
 header p {
-    font-size: 1.2em;
-    max-width: 900px;
-    margin: auto;
+font-size: 1.25em;
+max-width: 950px;
+margin: auto;
 }
 
-/* NAV */
+
+/* NAVIGATION */
 nav {
-    background-color: #2a2a2a;
-    padding: 15px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+background-color: #1f2a33;
+padding: 16px;
+text-align: center;
+position: sticky;
+top: 0;
+z-index: 100;
 }
+
 
 nav a {
-    color: #e0e0e0;
-    margin: 0 16px;
-    text-decoration: none;
-    font-weight: bold;
+color: #e5eaf0;
+margin: 0 18px;
+text-decoration: none;
+font-weight: 600;
+letter-spacing: 0.5px;
 }
 
-/* SECTION COLORS */
-.overview-section { background:#f4f6f8; }
-.problem-section { background:#f0f0f0; }
-.locations-section { background:#eef2f5; }
-.map-section { background:#ffffff; }
-.cost-section { background:#f4f6f8; }
-.impact-section { background:#eef2f5; }
-.conclusion-section { background:#f0f0f0; }
 
-/* GENERAL SECTIONS */
+nav a:hover {
+text-decoration: underline;
+}
+
+
+/* SECTIONS */
 section {
-    padding: 70px 20px;
+padding: 80px 20px;
 }
+
 
 .card {
-    max-width: 1100px;
-    margin: auto;
-    background-color: #ffffff;
-    border-radius: 12px;
-    padding: 45px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+max-width: 1150px;
+margin: auto;
+background-color: #ffffff;
+border-radius: 10px;
+padding: 55px;
+box-shadow: 0 12px 28px rgba(0,0,0,0.15);
 }
+
 
 h2 {
-    color: #333;
-    border-left: 5px solid #777;
-    padding-left: 15px;
+color: #2b3a42;
+border-left: 6px solid #6b7c85;
+padding-left: 18px;
+margin-bottom: 25px;
 }
 
-h3 {
-    color: #444;
-    margin-top: 25px;
+
+p {
+font-size: 1.05em;
 }
 
-/* BEFORE AFTER MAPS */
-.map-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin-top: 35px;
+
+/* DATA CHARTS */
+.chart {
+margin: 45px 0;
 }
 
-.map-grid img {
-    width: 100%;
-    border-radius: 12px;
+
+.bar-label {
+font-weight: 600;
+margin-bottom: 8px;
 }
 
-/* LEGEND */
-.legend {
-    margin-top: 40px;
-    border-top: 2px solid #ddd;
-    padding-top: 25px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
 
-/* FOOTER */
-footer {
-    background-color: #2a2a2a;
-    color: #dcdcdc;
-    text-align: center;
-    padding: 30px;
-}
-</style>
-</head>
-
-<body>
-
-<header>
-<h1>Walk McHenry</h1>
-<p>
-A formal proposal to expand sidewalk infrastructure in McHenry, Illinois
-to improve pedestrian safety, accessibility, and long-term community outcomes.
-</p>
-</header>
-
-<nav>
-<a href="#overview">Overview</a>
-<a href="#problem">Problem</a>
-<a href="#locations">Locations</a>
-<a href="#map">Map</a>
-<a href="#cost">Cost</a>
-<a href="#impact">Impact</a>
-<a href="#conclusion">Conclusion</a>
-</nav>
-
-<!-- OVERVIEW -->
-<section id="overview" class="overview-section">
-<div class="card">
-<h2>Project Overview</h2>
-<p>
-McHenry currently lacks continuous sidewalk infrastructure in several
-residential and high-traffic areas. This proposal recommends a phased
-expansion of sidewalks to improve safety, accessibility, and mobility.
-</p>
-<p>
-Sidewalks are essential public safety infrastructure that support students,
-seniors, families, and individuals with disabilities.
-</p>
-</div>
-</section>
-
-<!-- PROBLEM -->
-<section id="problem" class="problem-section">
-<div class="card">
-<h2>Problem Statement</h2>
-<p>
-Many streets in McHenry were designed primarily for vehicle traffic,
-leaving pedestrians without dedicated walking space.
-</p>
-<ul>
-<li>Increased risk of pedestrian injury</li>
-<li>Unsafe walking routes near schools</li>
-<li>Limited ADA accessibility</li>
-<li>Conflict between vehicles and pedestrians</li>
-</ul>
-</div>
-</section>
-
-<!-- LOCATIONS -->
-<section id="locations" class="locations-section">
-<div class="card">
-<h2>Priority Locations</h2>
-
-<h3>Schools</h3>
-<ul>
-<li>McHenry High School – West Campus</li>
-<li>Landmark Elementary School</li>
-</ul>
-
-<h3>Major Roads</h3>
-<ul>
-<li>Route 31</li>
-<li>Riverside Drive</li>
-</ul>
-
-<h3>Community Areas</h3>
-<ul>
-<li>Bus stops</li>
-<li>Parks and downtown connectors</li>
-</ul>
-</div>
-</section>
-
-<!-- MAP -->
-<section id="map" class="map-section">
-<div class="card">
-
-<h2>Pedestrian Priority Map — Before & After</h2>
-<p>
-This comparison shows current pedestrian conditions and how
-new sidewalks would improve connectivity and safety.
-</p>
-
-<div class="map-grid">
-
-<div>
-<h3>❌ Existing Conditions (Before)</h3>
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/55/McHenry_Illinois_Map.png" alt="Before map">
-<p>
-Sidewalks are disconnected, forcing pedestrians to share space with vehicles.
-</p>
-</div>
-
-<div>
-<h3>✅ Proposed Improvements (After)</h3>
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/55/McHenry_Illinois_Map.png" alt="After map">
-<p>
-Continuous sidewalks connect schools, neighborhoods, and community spaces.
-</p>
-</div>
-
-</div>
-
-<div class="legend">
-<div>
-<p><strong>🔴 Red Lines</strong> — High-risk pedestrian areas</p>
-<p><strong>🟡 Yellow Zones</strong> — School walking routes</p>
-</div>
-<div>
-<p><strong>🟢 Green Lines</strong> — Proposed sidewalks</p>
-<p><strong>🔵 Blue Areas</strong> — Parks & downtown areas</p>
-</div>
-</div>
-
-</div>
-</section>
-
-<!-- COST -->
-<section id="cost" class="cost-section">
-<div class="card">
-<h2>Cost Analysis & Funding</h2>
-<ul>
-<li>$30–$40 per square foot</li>
-<li>$200,000–$250,000 per mile</li>
-</ul>
-<p>
-Sidewalks typically last over 30 years and reduce long-term safety
-and healthcare costs.
-</p>
-
-<h3>Funding Strategy</h3>
-<ul>
-<li>City capital improvement funds</li>
-<li>State and federal safety grants</li>
-<li>Phased multi-year construction</li>
-</ul>
-</div>
-</section>
-
-<!-- IMPACT -->
-<section id="impact" class="impact-section">
-<div class="card">
-<h2>Community Impact</h2>
-<ul>
-<li>Improved ADA accessibility</li>
-<li>Safer school routes</li>
-<li>Reduced vehicle dependence</li>
-<li>Stronger neighborhood connections</li>
-</ul>
-</div>
-</section>
-
-<!-- CONCLUSION -->
-<section id="conclusion" class="conclusion-section">
-<div class="card">
-<h2>Conclusion</h2>
-<p>
-Expanding sidewalk infrastructure is a practical, proven investment
-in McHenry’s future. This proposal prioritizes safety, accessibility,
-and responsible long-term planning.
-</p>
-</div>
-</section>
-
-<footer>
-<p>Walk McHenry © 2025 | Sidewalk Infrastructure Proposal</p>
-</footer>
-
-</body>
-</html>
+.bar-container {
+    </html>
